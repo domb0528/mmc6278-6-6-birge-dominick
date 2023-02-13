@@ -4,8 +4,13 @@ const htmlRoutes = require('./routes/html-routes')
 const app = express()
 // TODO: Require Exphbs
 
+const exphbs = require('express-handlebars')
+
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
+
+app.engine('handlebars', exphbs.engine())
+app.set('view engine', 'handlebars')
 
 // TODO: Add the handlebars setup code
 
