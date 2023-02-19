@@ -28,6 +28,7 @@
 <!-- TODO: 👇Use a handlebars each helper to loop over cart items👇 -->
         
          {{#each cartItems}}
+         <div class="cart-item">
 <!-- replace with product id -->
     <!-- replace with inventoryId -->
           <a
@@ -62,6 +63,7 @@
             </div>
 <!-- replace with calculatedPrice -->
             <p>${{calculatedPrice}}</p>
+            </div>
           </div>
 {{/each}}
 
